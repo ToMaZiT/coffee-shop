@@ -1,5 +1,34 @@
-body {
-  background-color: black;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  background-color: rgb(119, 86, 55);
+}
+.home .home-background {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+.home .home-background .background {
+  width: 100%;
+  max-height: 958px;
+  opacity: 30%;
+  z-index: -10;
+}
+
+@font-face {
+  font-family: "Mechta";
+  src: url("../fonts/fonnts.com-Mechta_Regular.ttf");
+}
+.navbar {
+  border: 1px solid red;
+  height: 100px;
+  background-color: white;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=style.css.map */
