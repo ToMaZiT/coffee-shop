@@ -1,0 +1,30 @@
+@import "../base/colors";
+
+.first-look-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 5%;
+
+    .first-look-image {
+        width: 600px;
+        margin: 0 5% 0 5%
+        
+    }
+
+    .first-look-info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+        margin: 0 5% 0 5%;
+
+        .first-look-info {
+            font-size: 60px;
+            font-family: "Mechta";
+            color: $bg-color-navbar;
+
+        }
+        
+    }
+}
