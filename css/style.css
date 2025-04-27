@@ -1,0 +1,111 @@
+.inter-roboto {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.hedvig-letters-serif-hedvig {
+    font-family: "Hedvig Letters Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+    --veryDarkBrown: #26170D;
+    --white: #EEE5D4;
+    --yellow: #F2C985;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: var(--veryDarkBrown);
+    color: var(--white);
+}
+
+.nav-bar-buttons {
+    display: flex;
+    padding-right: 100px;
+}
+.logo {
+    font-size: 30px;
+    padding-left: 100px;
+}
+a {
+    padding: 0 30px;
+    color: var(--white);
+    text-decoration: none;
+    cursor: default;
+    font-size: 20px;
+}
+body {
+    font-family: 'Roboto';
+}
+header {
+    background-image: url('../assets/coffee-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-box {
+    padding-left: 100px;
+    font-family: 'hedvig';
+    font-size: 50px;
+    width: 800px;
+    color: var(--white);
+}
+
+.main-words {
+    font-size: 40px;
+    color: var(--yellow);
+    font-family: 'Roboto';
+    font-weight: 800;
+}
+
+.view-menu-button {
+   font-size: 30px;
+   background-color: transparent;
+   color: var(--white);
+   border: 2px solid var(--yellow);
+   border-radius: 10px;
+
+   font-weight: 300px;
+   margin-top: 50px;
+   cursor: pointer;
+
+   width: 200px;
+   height: 80px;
+   
+   transition: background-color 200ms ease;
+}
+
+.view-menu{
+    font-weight: 500;
+}
+
+.view-menu-button:hover{
+    border: 2px solid var(--yellow);
+    background-color: var(--veryDarkBrown);
+    font-style: bold;
+    
+    font-weight: 600;
+}
+
