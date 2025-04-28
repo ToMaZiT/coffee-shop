@@ -44,6 +44,7 @@
 .logo {
     font-size: 30px;
     padding-left: 100px;
+    letter-spacing: 6px;
 }
 a {
     padding: 0 30px;
@@ -54,6 +55,7 @@ a {
 }
 body {
     font-family: 'Roboto';
+    
 }
 header {
     background-image: url('../assets/coffee-background.png');
@@ -109,3 +111,126 @@ header {
     font-weight: 600;
 }
 
+main {
+    background-color: var(--white);
+    line-height: 40px;
+    color: var(--veryDarkBrown)
+}
+
+#about {
+    
+    display: flex;
+    justify-content: space-between;
+    
+
+    padding: 100px 250px 0 250px;
+    
+    
+}
+
+.about-text {
+    width: 600px;
+    padding-right: 300px;
+}
+
+.about-us-title {
+    font-family: 'hedvig';
+    padding-bottom: 30px;
+    font-weight: 500;
+
+    font-size: 60px;
+}
+
+.about-text {
+    font-size: 25px;
+}
+
+#menu {
+   
+    width: 1200px;
+    margin: auto;
+
+    padding-top: 100px;
+    
+}
+
+.our-menu {
+    display: flex;
+    justify-content: center;
+    font-family: 'hedvig';
+    font-size: 60px;
+    font-weight: 500;
+
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: 'hedvig';
+    /* border-bottom: 1px solid var(--veryDarkBrown); */
+}
+
+
+#active-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    justify-content: center;
+}
+
+.active-option {
+    border: 3px solid black;
+    width: 400px;
+    height: 530px;
+    margin: auto;
+
+    margin: 10px;
+
+    border-radius: 10px;
+}
+
+.option-image {
+    width: 350px;
+    height: 350px;
+    
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option-name {
+    font-size: 30px;   
+    padding-left: 25px; 
+    font-family: 'hedvig';
+
+    border-top: 3px solid var(--veryDarkBrown);
+}
+
+.price {
+    padding-left: 25px; 
+    border-bottom: 3px solid var(--veryDarkBrown);
+    font-family: 'hedvig';
+
+    
+
+    font-size: 20px;
+}
+
+.description {
+    padding-left: 25px;
+    
+}
