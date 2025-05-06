@@ -77,3 +77,34 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("drinks").classList.add("active");
   renderMenu("drinks");
 });
+
+
+
+
+// MAPA CHAVALES
+
+
+const mapWrapper = document.getElementById('mapWrapper');
+const overlay = document.getElementById('mapOverlay');
+
+overlay.addEventListener('click', function (e) {
+  e.stopPropagation();
+  mapWrapper.classList.add('expanded');
+});
+
+document.addEventListener('click', function (e) {
+  if (!mapWrapper.contains(e.target)) {
+    mapWrapper.classList.remove('expanded');
+  }
+});
+
+const mapContainer = document.querySelector('.map-container');
+const infoContainer = document.querySelector('.info-container');
+
+mapContainer.addEventListener('click', () => {
+  mapContainer.classList.add('expanded');
+  infoContainer.style.display = 'none';
+});
+
+
+

@@ -6,6 +6,14 @@
 }
 
 
+.exo-2-exo {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 .hedvig-letters-serif-hedvig {
     font-family: "Hedvig Letters Serif", serif;
     font-optical-sizing: auto;
@@ -49,7 +57,7 @@
     padding-left: 100px;
     letter-spacing: 6px;
 }
-a {
+.nav-bar-button {
 
     color: var(--white);
     text-decoration: none;
@@ -58,7 +66,7 @@ a {
     transition: all 200ms ease;
 }
 
-a:hover {
+.nav-bar-button:hover {
     opacity: 80%;
     cursor: pointer;
     
@@ -113,6 +121,11 @@ header {
 .view-menu{
     font-weight: 500;
 }
+.view-menu-a{
+  text-decoration: none;
+  color: var(--white)
+ 
+}
 
 .view-menu-button:hover{
     border: 2px solid var(--yellow);
@@ -132,16 +145,15 @@ main {
     
     display: flex;
     justify-content: space-between;
-    
-
-    padding: 100px 250px 0 250px;
-    
+    padding-top: 100px;
+    width: 1200px;
+    margin: auto;
     
 }
 
 .about-text {
-    width: 600px;
-    padding-right: 300px;
+    padding-right: 40px;
+    font-size: 25px;
 }
 
 .about-us-title {
@@ -152,9 +164,6 @@ main {
     font-size: 60px;
 }
 
-.about-text {
-    font-size: 25px;
-}
 
 #menu {
    
@@ -202,90 +211,243 @@ main {
   }
   
 
-  .our-menu {
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 2rem;
-    color: #2f1c13;
-  }
-  
-  
-  .menu-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
-  
-  .menu-button {
-    padding: 0.75rem 1.5rem;
-    background-color: #7b4e2e;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-button:hover,
-  .menu-button:focus {
-    background-color: #5c3922;
-  }
-  
+.our-menu {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+  color: #2f1c13;
+}
 
-  #active-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-  }
-  
 
-  .active-option {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 1.2rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-    transition: transform 0.3s ease;
-    text-align: center;
-  }
-  
-  .active-option:hover {
-    transform: translateY(-5px);
-    z-index: 0;
-  }
-  
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
 
-  .option-image {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
+.menu-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #7b4e2e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .option-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #2f1c13;
-    margin: 0.5rem 0;
-  }
-  
+.menu-button:hover,
+.menu-button:focus {
+  background-color: #5c3922;
+}
 
-  .price {
-    color: #7b4e2e;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-  }
-  
 
-  .description {
-    font-size: 0.95rem;
-    color: #5b4a3d;
-  }
-  
+#active-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+
+.active-option {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.active-option:hover {
+  transform: translateY(-5px);
+  z-index: 0;
+}
+
+
+.option-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+.option-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2f1c13;
+  margin: 0.5rem 0;
+}
+
+
+.price {
+  color: #7b4e2e;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+
+.description {
+  font-size: 0.95rem;
+  color: #5b4a3d;
+}
+
+
+
+
+#find-us-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  width: 1200px;
+  margin: auto;
+}
+
+
+.find-us-title {
+  font-family: 'hedvig';
+  padding-bottom: 30px;
+  font-weight: 500;
+
+  font-size: 60px;
+}
+
+
+.find-us-p {
+  padding-right: 40px;
+  font-size: 25px;
+}
+
+.find-us-subtitle {
+  font-family: 'hedvig';
+
+  padding-top: 50px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 40px;
+  font-weight: 500;
+
+
+}
+
+.hours {
+  padding-bottom: 20px;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.map-wrapper.expanded {
+  max-width: 100%;
+  height: 500px;
+}
+
+.map-wrapper.expanded .map-overlay {
+  display: none;
+}
+
+.find-us-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  transition: all 0.5s ease;
+}
+
+.info-container {
+  flex: 1;
+}
+
+.map-container {
+  flex: 1;
+  height: 300px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.map-container.expanded {
+  flex: 1 1 100%;
+  height: 500px;
+}
+
+
+#footer {
+  background-color: var(--veryDarkBrown);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+
+
+.footer-contact, .footer-dev {
+  margin: 20px 30px;
+}
+
+.footer-title{
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.footer-p{
+  height: 30px;
+}
+
+.footer-dev {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'exo 2';
+  font-style: italic;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  padding: 10px 5px 0 5px;
+  margin-top: 10px;
+
+  color: var(--white);
+
+  transition: all 200ms ease;
+}
+
+.dev-name {
+  padding-bottom: 10px;
+}
+
+.icon:hover {
+  opacity: 90%;
+}
+
 
 
