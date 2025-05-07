@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
   const menuData = {
     drinks: [
-      { name: "Espresso", price: "$2.50", desc: "A concentrated coffee with bold flavor and rich aroma.", img: "../assets/espresso.png" },
+      { name: "Espresso", price: "$2.50", desc: "A concentrated coffee with bold flavor and rich aroma.", img: "assets/espresso.png" },
       { name: "Americano", price: "$2.75", desc: "Espresso diluted with hot water for a smoother taste.", img: "assets/cafe-americano.png" },
       { name: "Latte", price: "$3.50", desc: "Espresso blended with steamed milk and a light layer of foam.", img: "assets/latte.jpg" },
       { name: "Americano", price: "$2.75", desc: "Espresso diluted with hot water for a smoother taste.", img: "assets/espresso.png" },
