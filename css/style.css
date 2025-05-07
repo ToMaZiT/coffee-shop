@@ -652,9 +652,13 @@ main {
 @media (max-width: 480px) {
   .about-us-p {
     width: auto;
-    padding: 40px 10px;
+    padding: 10px 10px 40px 10px;
     font-size: 25px;
     
+  }
+
+  .about-us-title {
+    padding-bottom: 0;
   }
 
   .about-image {
@@ -680,7 +684,7 @@ main {
   .menu-button {
     font-size: 20px;
     margin: 5px 0;
-    width: 140px;
+    width: 160px;
   }
 
   .option-name {
@@ -700,6 +704,11 @@ main {
     gap: 0.5rem;
 
     
+  }
+
+  .find-us-title, .find-us-subtitle {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   #menu {
